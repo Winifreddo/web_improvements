@@ -1,5 +1,4 @@
-
-/* toggle the navigation menu when the burger bar is clicked */
+// navigation
 $(document).ready(function () {
 $('.burger').click(function() {
   $('nav').toggle();
