@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Exam</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+  <script src="jquery-3.6.4.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</head>
+
+	<body>
+    <div class="container-fluid">
+      <header class="header">
+        <nav class="show">
+          <a class="active" href="index.html">HOME</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="about.html">ABOUT</a>
+        </nav>
+        <a href="#" class="burger">&#9776;</a>
+      </header>
+	
+		<section>
+			<div class="heading">
+				<h1>MY BLOG</h1>
+					<p>Welcome to the blog of web development</p>
+				</div>
+		</section>
+		
+
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><h3>Image 1</h3><img class="img1" src="img/g1.jpg" alt=""  ><p>Lorem: I am Dummy Text</p></div>
+      <div class="swiper-slide"><h3>Image 2</h3><img class="img1" src="img/g2.jpg" alt=""  ><p>Lorem: I am Dummy Text</p></div>
+      <div class="swiper-slide"><h3>Image 3</h3><img class="img1" src="img/g3.jpg" alt="" > <p>Lorem: I am Dummy Text</p></div>
+      <div class="swiper-slide"><h3>Image 4</h3><img class="img1" src="img/g4.jpg" alt="" > <p>Lorem: I am Dummy Text</p></div>
+      <div class="swiper-slide"><h3>Image 5</h3><img class="img1" src="img/g5.jpg" alt="">  <p>Lorem: I am Dummy Text</p></div>
+      <div class="swiper-slide"><h3>Image 6</h3><img class="img1" src="img/g6.jpg" alt="" > <p>Lorem: I am Dummy Text</p></div>
+      <div class="swiper-slide"><h3>Image 7</h3><img class="img1" src="img/g7.jpg" alt="" > <p>Lorem: I am Dummy Text</p></div>
+      <div class="swiper-slide"><h3>Image 8</h3><img class="img1" src="img/g8.jpg" alt="" > <p>Lorem: I am Dummy Text</p></div>
+      <div class="swiper-slide"><h3>Image 9</h3><img class="img1" src="img/g8.jpg" alt="" > <p>Lorem: I am Dummy Text</p></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <footer>
+    <div id="footer-btn">
+    <button type="button" class="btn" style="background: #F58D6E">
+      <a href="index.html"><< Previous</a>
+    </button>
+    <p id="footer-p">Powered by web development group</p>
+
+    <button type="button" class="btn" style="background: #F58D6E">
+      <a href="about.html">Next >></a>
+    </button>
+  </div>
+  </footer>
+
+
+	<script>
+		// swiper framework 
+		var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+
+    480: {
+    
+      slidesPerView: 1,
+      spaceBetween: 5
+
+    }
+  }
+});
+	</script>
+  <script src="script.js"></script>
+</body>
+</html>
